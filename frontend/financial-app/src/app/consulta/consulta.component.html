@@ -1,0 +1,23 @@
+<div class="toolbar" role="banner">
+    <h1>Financiamento</h1>
+  </div>
+  
+  <div class="content" role="main">
+  
+  <h2>Consulte o Nome</h2>
+  <p>Selecione o ID</p>
+  
+  <div class="card-container">
+    <select class="select" onchange="localStorage.setItem('Numero', this.value);" >
+      <option> 1 </option>  
+      <option> 2 </option>  
+      <option> 3 </option>  
+    </select>    
+  </div>
+  <input type="hidden" #selection>
+  <div class="card-container">
+    <button class="buttom" tabindex="0">
+      <span>Buscar</span>
+    </button>
+  </div>   
+</div>
