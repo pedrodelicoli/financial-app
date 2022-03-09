@@ -8,20 +8,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
- .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-  }
-  
   .content {
     display: flex;
     margin: 82px auto 32px;
@@ -41,6 +27,7 @@
   .select {
     width: 200px;
     padding: 10px;
+    cursor: pointer;
   }
   
   .buttom {
@@ -52,9 +39,15 @@
     font-weight: 600;
     border: none;
     position: relative;
+    cursor: pointer;
   }
   
   .buttom:hover {
     transform: scale(1.1)   
+  }
+
+  .name {
+    color: #1976d2;
+    font-size: xx-large;
   }
   

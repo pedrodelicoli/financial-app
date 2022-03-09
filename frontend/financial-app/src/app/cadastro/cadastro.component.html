@@ -1,15 +1,11 @@
-<div class="toolbar" role="banner">
-    <h1>Financiamento</h1>
-  </div>
-  
   <div class="content" role="main">
   
   <h2>Parcelas</h2>
   <p>Digite o valor e as parcelas desejadas</p>
   
     <div class="card-container">
-      <input class="card card-small" onchange="localStorage.setItem('Valor', this.value);" placeholder="Valor" type="number">
-      <input class="card card-small" onchange="localStorage.setItem('Parcelas', this.value);" onKeyDown="return false" min="1" max="48" placeholder="Parcelas" type="number">
+      <input class="card card-small" pattern="^\d*(\.\d{0,2})?$" (change)="onChange($event)" placeholder="Valor" type="number">
+      <input class="card card-small input" onchange="localStorage.setItem('Parcelas', this.value);" onKeyDown="return false" min="1" max="48" placeholder="Parcelas" type="number">
     </div>
     <input type="hidden" #selection>
     <div class="card-container">
@@ -17,7 +13,8 @@
         <span>Salvar</span>
       </button>
     </div>
-    <footer> 
-      {{ value }}   
-    </footer>
+    <div> 
+      R$ {{ value }}   
+    </div>
   </div>
+0

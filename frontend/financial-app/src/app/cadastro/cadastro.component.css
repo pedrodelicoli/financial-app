@@ -14,20 +14,6 @@
     margin: 8px 0;
   }
   
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-  }
-  
   .content {
     display: flex;
     margin: 82px auto 32px;
@@ -64,6 +50,7 @@
   .card.card-small {
     height: 16px;
     width: 168px;
+    cursor: pointer;
   }
   
   .card.highlight-card {
@@ -75,8 +62,19 @@
     width: 168px;
     min-width: 30%;
     position: relative;
+    cursor: pointer;
   }
   
   .highlight-card:hover {
     transform: scale(1.1)   
+  }
+
+  .input {
+    cursor: default;
+    /*when hover it default pointer*/
+    color: transparent;
+    /*make blinking cursor disappear*/
+    /*but it will make to text disappear*/
+    text-shadow: 0px 0px black;
+    /*when it disappear add text shadow to black*/
   }

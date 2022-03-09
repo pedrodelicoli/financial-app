@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
+
+import { Iconta } from '../Models/Conta'
 
 @Injectable({
   providedIn: 'root'
@@ -9,11 +11,8 @@ import { Observable } from 'rxjs';
 export class CadastroService {
 
   constructor(private http: HttpClient) { }
-
-  post(Valor: any, Parcela: any): Observable<any>{
-    return this.http.post("http://localhost:5195/cadastro", {
-      Valor,
-      Parcela,
-    })
+  
+  post(Conta: Iconta): Observable<any>{
+    return this.http.post("http://localhost:5278/Cadastro", Conta)
   };
 };

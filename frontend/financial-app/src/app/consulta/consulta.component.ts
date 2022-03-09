@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConsultaService } from './consulta.service';
 
 @Component({
   selector: 'app-consulta',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consulta.component.css']
 })
 export class ConsultaComponent implements OnInit {
+  name: string = '';
 
-  constructor() { }
+  constructor(private consultaService: ConsultaService) { }
 
   ngOnInit(): void {
   }
+
+  clicked () {
+    const numero:any = localStorage.getItem('Numero');
+    this.consultaService.get(numero).subscribe( res => {
+      this.name = res.value;
+    }, err => {
+      console.log(err.message);
+    })  
+  } 
 
 }

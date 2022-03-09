@@ -11,13 +11,25 @@ export class CadastroComponent {
 
   constructor(private cadastroService: CadastroService) { }
   
-  clicked (): void  {
-    const valor:any = localStorage.getItem('Valor');
-    const parcela:any = localStorage.getItem('Parcelas');
-    this.cadastroService.post(valor, parcela).subscribe( res => {
-      this.value = res;
+  clicked () {
+    const Valor = (localStorage.getItem('Valor'))?.toString();
+    const Parcelas = (localStorage.getItem('Parcelas'))?.toString();
+    const Conta = {
+      Valor,
+      Parcelas
+    }
+    
+    this.cadastroService.post(Conta).subscribe( res => {
+      const valor = res.toFixed(2)
+      this.value = valor.replace('.', ',');
     }, err => {
       console.log(err);
     })  
   } 
+
+  onChange (event: any) {
+    const valor = parseFloat(event.target.value)
+    const fixed = valor.toFixed(2)
+    localStorage.setItem('Valor', fixed)  
+  }
 }
