@@ -61,10 +61,10 @@ Foi utilizado para o desenvolvimento desse projeto o ASP.NET C# no Backend e Ang
   <div>
     <h2> Pedro Delicoli </h2>
   <div style="display: flex;align-items: center;">
-    <img src="./images/github-logo.png" alt="LinkedIn" style="width:20px;"/> https://github.com/pedrodelicoli
+    <img src="./frontend/images/github-logo.png" alt="LinkedIn" style="width:20px;"/> https://github.com/pedrodelicoli
   </div>
   <div style="display: flex;align-items: center;">
-    <img src="./images/linkedin-logo.png" alt="LinkedIn" style="width:20px;"/> https://www.linkedin.com/in/pedrodelicoli/
+    <img src="./frontend/images/linkedin-logo.png" alt="LinkedIn" style="width:20px;"/> https://www.linkedin.com/in/pedrodelicoli/
   </div>
   <br/>
   Email: pedrodelicoli@hotmail.com  
