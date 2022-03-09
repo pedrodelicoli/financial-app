@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ConsultaComponent } from './consulta/consulta.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import { CadastroService } from './cadastro/cadastro.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +17,10 @@ import { ConsultaComponent } from './consulta/consulta.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CadastroService, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

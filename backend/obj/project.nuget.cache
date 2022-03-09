@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "5Yt+sh9LPoORu82lWL+Gm1bVaRaspv22gnyIl5ceWANSXYxv6qs+MryiU3prCNWE/D/mYk2AFm+r0vME3wNQAQ==",
+  "success": true,
+  "projectFilePath": "/home/pedrodelicoli/Documentos/Pessoal/financial-app/backend/backend.csproj",
+  "expectedPackageFiles": [
+    "/home/pedrodelicoli/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/pedrodelicoli/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/pedrodelicoli/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/pedrodelicoli/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/pedrodelicoli/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/pedrodelicoli/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CadastroService } from './cadastro.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -8,14 +9,15 @@ import { Component } from '@angular/core';
 export class CadastroComponent {
   value: number = 0;
 
-  constructor() { }
+  constructor(private cadastroService: CadastroService) { }
   
   clicked (): void  {
     const valor:any = localStorage.getItem('Valor');
     const parcela:any = localStorage.getItem('Parcelas');
-    const calculo = Math.round(((valor * parcela) * 1.05))
-    this.value = calculo;    
-  }
-
- 
+    this.cadastroService.post(valor, parcela).subscribe( res => {
+      this.value = res;
+    }, err => {
+      console.log(err);
+    })  
+  } 
 }
