@@ -6,7 +6,7 @@
 
 Esse projeto foi desenvolvido para uma vaga de fullstack.
 
-A proposta era desenvolver uma API de consulta, onde o usuário poderia simular as parcelas de emprśtimo e também consultar nome de usuarios por id.
+A proposta era desenvolver uma API de consulta, onde o usuário poderia simular as parcelas de empréstimo e também consultar nome de usuarios por id.
 
 ---
 
