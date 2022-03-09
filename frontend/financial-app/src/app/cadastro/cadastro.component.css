@@ -78,3 +78,8 @@
     text-shadow: 0px 0px black;
     /*when it disappear add text shadow to black*/
   }
+
+  .value {
+    font-size: x-large;
+    font-weight: 600;
+  }
