@@ -1,6 +1,4 @@
-# financial-app
-
-# Bem-vindos ao repositório do Trade App
+# Bem-vindos ao repositório do Financial App
 
 ## Contexto
 
